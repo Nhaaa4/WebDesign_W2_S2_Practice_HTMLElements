@@ -1,41 +1,90 @@
 <!-- Write your code here -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contect</title>
     <style>
-        body {
-            background-color: #ffffff;
-        }
-        a {
-            color: #000000;
-            text-decoration: none;
-        }
-        ul {
-            margin: 0px;
-            display: flex;
-            list-style-type: none;
-            justify-content: right;
-        }
-        li {
-            padding: 10px;
-        }
-        a:hover {
-            color: rgb(33, 152, 124);
-        }
-        span {
-            color: rgb(33, 152, 124);
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        font-family: sans-serif;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background-color: #42014c;
+        color: white;
+      } 
+      header {
+        margin: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 90%;
+        background-color: transparent;
+        filter: drop-shadow(10px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        font-weight: 800;
+        color: violet;
+        cursor: pointer;
+        transition: 0.5s ease;
+      }
+      .logo:hover{
+        transform: scale(1.2);
+      }
+      nav a {
+        font-size: 1.1rem;
+        color: white;
+        margin-left: 1.5rem;
+        font-weight: 500;
+        transition: 0.3s ease;
+        border-bottom: 3px solid transparent;
+      }
+      nav a:hover, 
+      nav a:active {
+        color: violet;
+        border-bottom: 3px solid blueviolet;
+      }
+      section {
+        min-height: 100vh;
+        padding: 5rem 6% 5rem;
+      }
+      span {
+        color: violet;
+      }
+      
     </style>
-</head>
-<body>
-    <ul>
-        <li><a href="./home.html">HOME</a></li>
-        <li><a href="./about.html">ABOUT US</a></li>
-        <li><a href="./service.html">OUR SERVICES</a></li>
-        <li><a href="./contact.html"><span>CONTACTS</span></a></li>
-    </ul>
-</body>
+  </head>
+  <body>
+    <header>
+      <a href="" class="logo">WebDesgin</a>
+      <nav>
+        <a href="./home.html">HOME</a>
+        <a href="./service.html">SERVICES</a>
+        <a href="./contact.html"><span>CONTACTS</span></a>
+        <a href="./about.html">ABOUT US</a>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div>
+        <h3>Facebook</h3>
+        <h3>Telegram</h3>
+        <h3>Instagram</h3>
+        <h3>LinkedIn</h3>
+      </div>
+    </section>
+  </body>
 </html>

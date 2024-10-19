@@ -6,57 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <style>
-      body {
+      * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
         font-family: sans-serif;
       }
-      .logo {
-        float: left;
-        width: 100px;
-        height: 100px;
-      }
-      ul {
-        background-color: #713671;
+      body {
+        width: 100%;
+        height: 100vh;
+        background-color: #42014c;
+        color: white;
+      } 
+      header {
+        margin: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 90%;
+        background-color: transparent;
+        filter: drop-shadow(10px);
         display: flex;
-        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        font-weight: 800;
+        color: violet;
+        cursor: pointer;
+        transition: 0.5s ease;
+      }
+      .logo:hover{
+        transform: scale(1.2);
+      }
+      nav a {
+        font-size: 1.1rem;
+        color: white;
+        margin-left: 1.5rem;
+        font-weight: 500;
+        transition: 0.3s ease;
+        border-bottom: 3px solid transparent;
+      }
+      nav a:hover, 
+      nav a:active {
+        color: violet;
+        border-bottom: 3px solid blueviolet;
+      }
+      section {
+        min-height: 100vh;
+        padding: 5rem 6% 5rem;
+      }
+      .home {
         justify-content: center;
-        border-radius: 10px;
-        
+        align-items: center;
       }
-      li {
-        padding: 10px;
-      }
-      a {
-        color: #b6a6b5;
-        text-decoration: none;
-      }
-      a:hover {
-        color: #ffe7ff;
+      .home .home-content h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 2;
       }
       span {
-        color: #ffe7ff;
+        color: violet;
       }
-      img {
-        float: right;
+      .home-content h3 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+      .home-image {
+        border-radius: 50%;
+      }
+      .home-image img {
+        position: relative;
+        width: 50vw;
+        border-radius: 50%;
       }
     </style>
   </head>
   <body>
-    <img class="logo" src="./logo_school.jpg" alt="" />
-    <ul>
-      <li>
+    <header>
+      <a href="" class="logo">WebDesgin</a>
+      <nav>
         <a href="./home.html"><span>HOME</span></a>
-      </li>
-      <li><a href="./about.html">ABOUT US</a></li>
-      <li><a href="./service.html">OUR SERVICES</a></li>
-      <li><a href="./contact.html">CONTACTS</a></li>
-    </ul>
-    <h1>Web Desgin Course</h1>
-    <p>
-      <strong>Web Design Focus on</strong> Lorem ipsum dolor sit, amet
-      consectetur adipisicing elit. Voluptas commodi sequi fugiat libero eos
-      consequatur aliquam nemo quia, officia ratione corrupti, itaque magnam
-      vero et cupiditate nihil quisquam doloremque laborum?
-    </p>
-    <img src="web.png" alt="" />
+        <a href="./service.html">SERVICES</a>
+        <a href="./contact.html">CONTACTS</a>
+        <a href="./about.html">ABOUT US</a>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div>
+        <h1>Welcome to <span>Web Desgin</span></h1>
+      </div>
+      <div class="home-image">
+        <img src="./web.png" alt="WebDesign" />
+      </div>
+      <div class="home-content">
+        <p>
+          <strong>This Class focus on Web design, </strong> Lorem ipsum dolor
+          sit, amet consectetur adipisicing elit. At autem voluptates soluta
+          optio voluptate quia provident. Voluptatum sed, provident neque cumque
+          temporibus laborum dolore minima enim, ratione sit, maxime voluptatem!
+        </p>
+      </div>
+    </section>
   </body>
 </html>
