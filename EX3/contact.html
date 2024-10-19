@@ -20,7 +20,7 @@
         height: 100vh;
         background-color: #42014c;
         color: white;
-      } 
+      }
       header {
         margin: 20px;
         position: fixed;
@@ -28,20 +28,19 @@
         left: 0;
         width: 90%;
         background-color: transparent;
-        filter: drop-shadow(10px);
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
       .logo {
-        font-family: 'Times New Roman', Times, serif;
+        font-family: "Times New Roman", Times, serif;
         font-size: 2rem;
         font-weight: 800;
         color: violet;
         cursor: pointer;
         transition: 0.5s ease;
       }
-      .logo:hover{
+      .logo:hover {
         transform: scale(1.2);
       }
       nav a {
@@ -52,7 +51,7 @@
         transition: 0.3s ease;
         border-bottom: 3px solid transparent;
       }
-      nav a:hover, 
+      nav a:hover,
       nav a:active {
         color: violet;
         border-bottom: 3px solid blueviolet;
@@ -64,7 +63,25 @@
       span {
         color: violet;
       }
-      
+      .home {
+        margin-top: 5%;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      ul li {
+        display: flex;
+        text-decoration: none;
+        margin: 10px 0 30px;
+      }
+      img {
+        width: 400px;
+        position: absolute;
+        right: 10%;
+      }
+      p {
+        width: 50%;
+      }
     </style>
   </head>
   <body>
@@ -80,10 +97,20 @@
 
     <section class="home">
       <div>
-        <h3>Facebook</h3>
-        <h3>Telegram</h3>
-        <h3>Instagram</h3>
-        <h3>LinkedIn</h3>
+        <h1><span>Keep in touch</span> with us!</h1>
+        <img src="./keep_in_touch.jpg" alt="" />
+        <ul>
+          <li>Facebook page</li>
+          <li>Instagram</li>
+          <li>Tiktok</li>
+          <li>LinkedIn</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          accusantium quod architecto sit delectus molestias eveniet,
+          voluptatibus perferendis corporis maxime sed, iusto aut repellat
+          dignissimos, praesentium distinctio quisquam quos autem?
+        </p>
       </div>
     </section>
   </body>
